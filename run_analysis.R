@@ -12,16 +12,16 @@ if(!dir.exists("UCI HAR Dataset")) {
 
 
 ## Load the required data
-subject_test <- read.table("UCI HAR dataX/test/subject_test.txt")
-subject_train <- read.table("UCI HAR dataX/train/subject_train.txt")
-X_test <- read.table("UCI HAR dataX/test/X_test.txt")
-X_train <- read.table("UCI HAR dataX/train/X_train.txt")
-y_test <- read.table("UCI HAR dataX/test/y_test.txt")
-y_train <- read.table("UCI HAR dataX/train/y_train.txt")
+subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
+subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
+X_test <- read.table("UCI HAR Dataset/test/X_test.txt")
+X_train <- read.table("UCI HAR Dataset/train/X_train.txt")
+y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
+y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 
 ## Read the activity labels and features
-activity_labels <- read.table("UCI HAR dataX/activity_labels.txt")
-features <- read.table("UCI HAR dataX/features.txt")  
+activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
+features <- read.table("UCI HAR Dataset/features.txt")  
 
 ## Analysis
 # Merge the training and the test data sets to create one data set
