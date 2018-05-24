@@ -4,8 +4,8 @@ library("reshape2")
 
 
 ## If unzipped directory does not exist, download and unzip data
-if(!dir.exists("UCI HAR dataX")) {
-    url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20dataX.zip"
+if(!dir.exists("UCI HAR Dataset")) {
+    url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
     download.file(url,"data.zip", mode = "wb")
     unzip("data.zip", exdir=".")
 }
